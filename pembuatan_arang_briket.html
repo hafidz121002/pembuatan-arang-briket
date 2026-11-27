@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Panduan sistematis pembuatan arang briket berkualitas tinggi dan katalog produk briket tempurung kelapa, sawdust, dan kayu keras.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  
+  <!-- Content Security Policy (CSP) Ketat dengan Nonce & Sumber Tepercaya -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'nonce-briket2026sec' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://placehold.co data:; connect-src 'self'; form-action 'self' https://wa.me; base-uri 'self'; object-src 'none';">
+  
+  <title>pembuatan arang briket — Panduan Sistematis & Katalog Produksi</title>
+  
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script nonce="briket2026sec" src="https://cdn.tailwindcss.com"></script>
+  <script nonce="briket2026sec">
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            carbon: {
+              50: '#fafafa',
+              100: '#f4f4f5',
+              200: '#e4e4e7',
+              300: '#d4d4d8',
+              400: '#a1a1aa',
+              500: '#71717a',
+              600: '#52525b',
+              700: '#3f3f46',
+              800: '#27272a',
+              900: '#18181b',
+              950: '#09090b',
+            }
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Modul Gaya Kustom (Siap dipisah ke style.css) -->
+  <style>
+    /* Reset & Pencegahan Horizontal Scroll */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    html, body {
+      max-width: 100%;
+      overflow-x: hidden;
+      background-color: #fafafa;
+      color: #09090b;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Pola Grid Halus Monokrom untuk Hero */
+    .bg-grid-mono {
+      background-size: 32px 32px;
+      background-image: 
+        linear-gradient(to right, rgba(24, 24, 27, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(24, 24, 27, 0.05) 1px, transparent 1px);
+    }
+
+    /* Custom Scrollbar Monokrom */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f4f4f5;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #52525b;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #18181b;
+    }
+
+    /* Animasi Transisi Drawer & Toast */
+    .drawer-backdrop {
+      transition: opacity 0.25s ease-in-out;
+    }
+    .drawer-panel {
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes slideInToast {
+      from {
+        opacity: 0;
+        transform: translateY(16px) scale(0.96);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+    .toast-enter {
+      animation: slideInToast 0.25s ease-out forwards;
+    }
+  </style>
+</head>
+<body class="font-sans text-carbon-950 bg-carbon-50 selection:bg-carbon-950 selection:text-white flex flex-col min-h-screen">
+
+  <!-- ==================== 1. HEADER NAVIGASI RESPONSIF ==================== -->
+  <header class="sticky top-0 z-40 w-full bg-white/90 backdrop-blur-md border-b border-carbon-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20">
+        
+        <!-- Logo & Brand -->
+        <a href="#beranda" class="flex items-center gap-3 group focus:outline-none">
+          <div class="w-10 h-10 rounded-xl bg-carbon-950 text-white flex items-center justify-center shadow-sm group-hover:bg-carbon-800 transition-colors">
+            <!-- Ikon SVG Kubus Briket Geometris -->
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+              <line x1="12" y1="22.08" x2="12" y2="12"/>
+            </svg>
+          </div>
+          <div>
+            <span class="block text-base sm:text-lg font-extrabold tracking-tight text-carbon-950 lowercase">pembuatan arang briket</span>
+            <span class="block text-[11px] font-mono text-carbon-500 uppercase tracking-widest">Standar Produksi & Distribusi</span>
+          </div>
+        </a>
+
+        <!-- Navigasi Desktop -->
+        <nav class="hidden md:flex items-center gap-1 lg:gap-2" aria-label="Navigasi Utama">
+          <a href="#beranda" class="px-4 py-2.5 rounded-xl text-sm font-medium text-carbon-700 hover:text-carbon-950 hover:bg-carbon-100 transition-colors">Beranda</a>
+          <a href="#proses" class="px-4 py-2.5 rounded-xl text-sm font-medium text-carbon-700 hover:text-carbon-950 hover:bg-carbon-100 transition-colors">Proses Pembuatan</a>
+          <a href="#katalog" class="px-4 py-2.5 rounded-xl text-sm font-medium text-carbon-700 hover:text-carbon-950 hover:bg-carbon-100 transition-colors">Katalog</a>
+          <a href="#tentang" class="px-4 py-2.5 rounded-xl text-sm font-medium text-carbon-700 hover:text-carbon-950 hover:bg-carbon-100 transition-colors">Tentang Kami</a>
+        </nav>
+
+        <!-- Aksi Kanan: Tombol Keranjang & Toggle Mobile -->
+        <div class="flex items-center gap-2 sm:gap-3">
+          <button type="button" id="btnOpenCart" aria-label="Buka Keranjang Belanja" class="relative inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-carbon-950 text-white text-sm font-semibold hover:bg-carbon-800 active:scale-[0.98] transition-all shadow-sm min-h-[44px]">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+            </svg>
+            <span class="hidden sm:inline">Keranjang</span>
+            <span id="cartBadgeCount" class="inline-flex items-center justify-center min-w-[22px] h-[22px] px-1.5 rounded-full bg-white text-carbon-950 text-xs font-mono font-bold">0</span>
+          </button>
+
+          <!-- Tombol Hamburger Mobile -->
+          <button type="button" id="btnMobileMenu" aria-expanded="false" aria-controls="mobileNavMenu" aria-label="Buka Menu Navigasi" class="md:hidden inline-flex items-center justify-center p-2.5 rounded-xl border border-carbon-300 bg-white text-carbon-900 hover:bg-carbon-100 min-w-[44px] min-h-[44px]">
+            <svg id="iconMenuOpen" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+            </svg>
+            <svg id="iconMenuClose" class="w-5 h-5 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Dropdown Menu Mobile -->
+      <nav id="mobileNavMenu" class="hidden md:hidden pb-4 pt-2 border-t border-carbon-200 space-y-1" aria-label="Navigasi Mobile">
+        <a href="#beranda" class="mobile-nav-link block px-4 py-3 rounded-xl text-base font-medium text-carbon-800 hover:bg-carbon-100">Beranda</a>
+        <a href="#proses" class="mobile-nav-link block px-4 py-3 rounded-xl text-base font-medium text-carbon-800 hover:bg-carbon-100">Proses Pembuatan</a>
+        <a href="#katalog" class="mobile-nav-link block px-4 py-3 rounded-xl text-base font-medium text-carbon-800 hover:bg-carbon-100">Katalog Produk</a>
+        <a href="#tentang" class="mobile-nav-link block px-4 py-3 rounded-xl text-base font-medium text-carbon-800 hover:bg-carbon-100">Tentang Kami</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    <!-- ==================== 2. HERO SECTION ==================== -->
+    <section id="beranda" class="relative bg-grid-mono border-b border-carbon-200 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20 lg:py-24">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+          
+          <!-- Kolom Teks Hero -->
+          <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-carbon-950 text-white text-xs font-mono tracking-wide">
+              <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+              <span>SISTEMATIS • TERUKUR • STANDAR EKSPOR</span>
+            </div>
+            
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-carbon-950 leading-[1.12]">
+              Rekayasa &amp; <span class="underline decoration-carbon-400 decoration-4 underline-offset-8">pembuatan arang briket</span> Berkalori Tinggi.
+            </h1>
+            
+            <p class="text-base sm:text-lg text-carbon-600 max-w-2xl leading-relaxed">
+              Pelajari metodologi terstruktur konversi biomassa menjadi bahan bakar padat berdensitas tinggi—mulai dari pirolisis tertutup, granulasi mesh, formulasi perekat alami, hingga pengeringan oven terkendali.
+            </p>
+            
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-3.5 pt-2">
+              <a href="#proses" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl bg-carbon-950 text-white font-semibold text-sm sm:text-base hover:bg-carbon-800 transition-all shadow-sm min-h-[48px]">
+                <span>Pelajari 5 Tahap Produksi</span>
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+              </a>
+              <a href="#katalog" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl bg-white text-carbon-950 border border-carbon-300 font-semibold text-sm sm:text-base hover:bg-carbon-100 transition-all min-h-[48px]">
+                <span>Lihat Katalog Briket</span>
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Kolom Kartu Spesifikasi Teknis Monokrom -->
+          <div class="lg:col-span-5">
+            <div class="bg-carbon-950 text-white rounded-3xl p-6 sm:p-8 shadow-xl border border-carbon-800 space-y-6">
+              <div class="flex items-center justify-between border-b border-carbon-800 pb-4">
+                <div>
+                  <p class="text-xs font-mono text-carbon-400 uppercase tracking-wider">Parameter Laboratorium</p>
+                  <h2 class="text-lg font-bold mt-0.5">Benchmark Kualitas Briket</h2>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-carbon-800 text-carbon-200 text-xs font-mono">ISO / SNI</span>
+              </div>
+
+              <div class="grid grid-cols-2 gap-4">
+                <div class="p-4 rounded-2xl bg-carbon-900 border border-carbon-800">
+                  <p class="text-xs font-mono text-carbon-400">Nilai Kalor</p>
+                  <p class="text-xl sm:text-2xl font-extrabold mt-1 font-mono">7.400+</p>
+                  <p class="text-xs text-carbon-400 mt-0.5">kkal/kg (Gross)</p>
+                </div>
+                <div class="p-4 rounded-2xl bg-carbon-900 border border-carbon-800">
+                  <p class="text-xs font-mono text-carbon-400">Kadar Abu (Ash)</p>
+                  <p class="text-xl sm:text-2xl font-extrabold mt-1 font-mono">&lt; 2.5%</p>
+                  <p class="text-xs text-carbon-400 mt-0.5">Abu Putih Halus</p>
+                </div>
+                <div class="p-4 rounded-2xl bg-carbon-900 border border-carbon-800">
+                  <p class="text-xs font-mono text-carbon-400">Kadar Air</p>
+                  <p class="text-xl sm:text-2xl font-extrabold mt-1 font-mono">&le; 5.0%</p>
+                  <p class="text-xs text-carbon-400 mt-0.5">Pengeringan Oven</p>
+                </div>
+                <div class="p-4 rounded-2xl bg-carbon-900 border border-carbon-800">
+                  <p class="text-xs font-mono text-carbon-400">Durasi Bara</p>
+                  <p class="text-xl sm:text-2xl font-extrabold mt-1 font-mono">2 - 5 Jam</p>
+                  <p class="text-xs text-carbon-400 mt-0.5">Tanpa Asap &amp; Bau</p>
+                </div>
+              </div>
+
+              <div class="pt-2 flex items-center justify-between text-xs text-carbon-400 font-mono">
+                <span>Fixed Carbon: &ge; 80%</span>
+                <span>Volatile Matter: &le; 14%</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. PENJELASAN TERSTRUKTUR & SISTEMATIS (5 TAHAP) ==================== -->
+    <section id="proses" class="py-16 sm:py-24 bg-white border-b border-carbon-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Judul Seksi -->
+        <div class="max-w-3xl mb-12 sm:mb-16">
+          <span class="inline-block px-3 py-1 rounded-lg bg-carbon-100 text-carbon-800 text-xs font-mono font-semibold uppercase tracking-wider mb-3">
+            Standard Operating Procedure (SOP)
+          </span>
+          <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-carbon-950">
+            5 Tahapan Sistematis Pembuatan Arang Briket
+          </h2>
+          <p class="mt-3 text-base text-carbon-600 leading-relaxed">
+            Setiap tahapan dikontrol secara kuantitatif untuk menghasilkan kerapatan massa optimal, daya ikat kuat (tidak mudah retak saat jatuh), dan pembakaran stabil tanpa percikan api.
+          </p>
+        </div>
+
+        <!-- Grid 5 Kartu Tahapan -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Tahap 01 -->
+          <article class="group p-6 sm:p-7 rounded-3xl bg-carbon-50 border border-carbon-200 hover:border-carbon-950 transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-5">
+                <span class="inline-flex items-center justify-center w-11 h-11 rounded-2xl bg-carbon-950 text-white font-mono font-bold text-base">01</span>
+                <span class="px-3 py-1 rounded-full bg-white border border-carbon-200 text-xs font-mono text-carbon-600">Suhu: 400°C – 550°C</span>
+              </div>
+              <h3 class="text-xl font-bold text-carbon-950 mb-2.5">Karbonisasi (Pirolisis)</h3>
+              <p class="text-sm text-carbon-600 leading-relaxed mb-5">
+                Pembakaran biomassa (tempurung kelapa tua, serbuk gergaji, atau kayu keras) di dalam tungku tertutup minim oksigen untuk menguapkan air serta senyawa volatil tanpa mengubah karbon menjadi abu.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-carbon-200 space-y-1.5 text-xs font-mono text-carbon-700">
+              <div class="flex justify-between"><span>Target Rendemen:</span><span class="font-semibold">28% – 33%</span></div>
+              <div class="flex justify-between"><span>Durasi Proses:</span><span class="font-semibold">6 – 8 Jam</span></div>
+            </div>
+          </article>
+
+          <!-- Tahap 02 -->
+          <article class="group p-6 sm:p-7 rounded-3xl bg-carbon-50 border border-carbon-200 hover:border-carbon-950 transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-5">
+                <span class="inline-flex items-center justify-center w-11 h-11 rounded-2xl bg-carbon-950 text-white font-mono font-bold text-base">02</span>
+                <span class="px-3 py-1 rounded-full bg-white border border-carbon-200 text-xs font-mono text-carbon-600">Ukuran: 60 – 80 Mesh</span>
+              </div>
+              <h3 class="text-xl font-bold text-carbon-950 mb-2.5">Penghalusan &amp; Pengayakan</h3>
+              <p class="text-sm text-carbon-600 leading-relaxed mb-5">
+                Arang mentah digiling menggunakan mesin <em>disk mill</em> atau <em>hammer mill</em>, kemudian diayak melewati saringan getar untuk mendapatkan tepung karbon homogen bebas batu maupun logam.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-carbon-200 space-y-1.5 text-xs font-mono text-carbon-700">
+              <div class="flex justify-between"><span>Kehalusan Partikel:</span><span class="font-semibold">&le; 0.25 mm</span></div>
+              <div class="flex justify-between"><span>Tujuan Teknis:</span><span class="font-semibold">Permukaan Halus</span></div>
+            </div>
+          </article>
+
+          <!-- Tahap 03 -->
+          <article class="group p-6 sm:p-7 rounded-3xl bg-carbon-50 border border-carbon-200 hover:border-carbon-950 transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-5">
+                <span class="inline-flex items-center justify-center w-11 h-11 rounded-2xl bg-carbon-950 text-white font-mono font-bold text-base">03</span>
+                <span class="px-3 py-1 rounded-full bg-white border border-carbon-200 text-xs font-mono text-carbon-600">Rasio Tapioka: 3% – 5%</span>
+              </div>
+              <h3 class="text-xl font-bold text-carbon-950 mb-2.5">Pencampuran Perekat</h3>
+              <p class="text-sm text-carbon-600 leading-relaxed mb-5">
+                Tepung karbon dicampur dengan pati tapioka murni dan air panas di dalam <em>wheel mixer</em> selama 20 menit hingga terbentuk adonan plastis yang mengikat partikel secara merata.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-carbon-200 space-y-1.5 text-xs font-mono text-carbon-700">
+              <div class="flex justify-between"><span>Kadar Air Adonan:</span><span class="font-semibold">30% – 35%</span></div>
+              <div class="flex justify-between"><span>Jenis Perekat:</span><span class="font-semibold">Food-Grade Tapioka</span></div>
+            </div>
+          </article>
+
+          <!-- Tahap 04 -->
+          <article class="group p-6 sm:p-7 rounded-3xl bg-carbon-50 border border-carbon-200 hover:border-carbon-950 transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-5">
+                <span class="inline-flex items-center justify-center w-11 h-11 rounded-2xl bg-carbon-950 text-white font-mono font-bold text-base">04</span>
+                <span class="px-3 py-1 rounded-full bg-white border border-carbon-200 text-xs font-mono text-carbon-600">Tekanan: &gt; 150 Bar</span>
+              </div>
+              <h3 class="text-xl font-bold text-carbon-950 mb-2.5">Pencetakan &amp; Pemadatan</h3>
+              <p class="text-sm text-carbon-600 leading-relaxed mb-5">
+                Adonan dimasukkan ke mesin ekstruder bertekanan tinggi untuk mengeluarkan rongga udara mikro, lalu dipotong presisi menjadi bentuk kubus (25x25 mm), heksagonal, maupun bantal (pillow).
+              </p>
+            </div>
+            <div class="pt-4 border-t border-carbon-200 space-y-1.5 text-xs font-mono text-carbon-700">
+              <div class="flex justify-between"><span>Densitas Curah:</span><span class="font-semibold">1.15 – 1.30 g/cm³</span></div>
+              <div class="flex justify-between"><span>Uji Jatuh (Drop Test):</span><span class="font-semibold">Lolos 1.5 Meter</span></div>
+            </div>
+          </article>
+
+          <!-- Tahap 05 -->
+          <article class="group p-6 sm:p-7 rounded-3xl bg-carbon-950 text-white border border-carbon-900 transition-all flex flex-col justify-between md:col-span-2 lg:col-span-2">
+            <div>
+              <div class="flex items-center justify-between mb-5">
+                <span class="inline-flex items-center justify-center w-11 h-11 rounded-2xl bg-white text-carbon-950 font-mono font-bold text-base">05</span>
+                <span class="px-3 py-1 rounded-full bg-carbon-800 border border-carbon-700 text-xs font-mono text-carbon-200">Suhu Oven: 65°C – 75°C</span>
+              </div>
+              <h3 class="text-xl sm:text-2xl font-bold text-white mb-2.5">Pengeringan Oven &amp; Pendinginan Terkendali</h3>
+              <p class="text-sm sm:text-base text-carbon-300 leading-relaxed mb-5">
+                Briket basah disusun di atas rak berpori di dalam ruang oven sirkulasi udara panas selama 36–48 jam hingga kadar air turun di bawah 5%. Setelah itu dilakukan tempering suhu ruang sebelum pengemasan kedap udara untuk mencegah penyerapan kelembapan kembali.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-carbon-800 grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs font-mono text-carbon-300">
+              <div class="p-3 rounded-xl bg-carbon-900">
+                <span class="block text-carbon-400">Durasi Pengeringan</span>
+                <span class="font-semibold text-white">36 – 48 Jam Kontinu</span>
+              </div>
+              <div class="p-3 rounded-xl bg-carbon-900">
+                <span class="block text-carbon-400">Kadar Air Akhir</span>
+                <span class="font-semibold text-white">Maksimal 4.8%</span>
+              </div>
+              <div class="p-3 rounded-xl bg-carbon-900">
+                <span class="block text-carbon-400">Kemasan Standar</span>
+                <span class="font-semibold text-white">Inner Plastik + Master Box</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. KATALOG PRODUK DENGAN PENCARIAN & FILTER ==================== -->
+    <section id="katalog" class="py-16 sm:py-24 bg-carbon-50 border-b border-carbon-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header Katalog -->
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10">
+          <div>
+            <span class="inline-block px-3 py-1 rounded-lg bg-carbon-200 text-carbon-900 text-xs font-mono font-semibold uppercase tracking-wider mb-3">
+              Katalog Produksi &amp; Bahan Baku
+            </span>
+            <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-carbon-950">
+              Varian Arang Briket &amp; Perlengkapan
+            </h2>
+            <p class="mt-2 text-sm sm:text-base text-carbon-600 max-w-2xl">
+              Pilih spesifikasi briket sesuai kebutuhan komersial, kuliner panggangan, lounge shisha, atau paket bahan baku produksi.
+            </p>
+          </div>
+
+          <!-- Input Pencarian Real-Time -->
+          <div class="w-full lg:w-80">
+            <label for="searchInput" class="sr-only">Cari produk arang briket</label>
+            <div class="relative">
+              <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4 text-carbon-400">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </div>
+              <input type="search" id="searchInput" maxlength="60" placeholder="Cari produk, ukuran, kalori..." class="w-full pl-11 pr-4 py-3 rounded-2xl bg-white border border-carbon-300 text-sm text-carbon-950 placeholder-carbon-400 focus:outline-none focus:border-carbon-950 focus:ring-2 focus:ring-carbon-950/10 transition-all min-h-[46px]">
+            </div>
+          </div>
+        </div>
+
+        <!-- Bar Filter Kategori -->
+        <div id="categoryFilterBar" class="flex flex-wrap items-center gap-2 mb-8" role="tablist" aria-label="Filter Kategori Produk">
+          <button type="button" data-category="Semua" class="filter-btn active px-4 py-2.5 rounded-xl text-sm font-semibold bg-carbon-950 text-white border border-carbon-950 transition-all min-h-[42px]">Semua Produk</button>
+          <button type="button" data-category="Tempurung Kelapa" class="filter-btn px-4 py-2.5 rounded-xl text-sm font-medium bg-white text-carbon-700 border border-carbon-300 hover:border-carbon-950 transition-all min-h-[42px]">Tempurung Kelapa</button>
+          <button type="button" data-category="BBQ & Resto" class="filter-btn px-4 py-2.5 rounded-xl text-sm font-medium bg-white text-carbon-700 border border-carbon-300 hover:border-carbon-950 transition-all min-h-[42px]">BBQ &amp; Resto</button>
+          <button type="button" data-category="Industri" class="filter-btn px-4 py-2.5 rounded-xl text-sm font-medium bg-white text-carbon-700 border border-carbon-300 hover:border-carbon-950 transition-all min-h-[42px]">Industri</button>
+          <button type="button" data-category="Bahan Baku" class="filter-btn px-4 py-2.5 rounded-xl text-sm font-medium bg-white text-carbon-700 border border-carbon-300 hover:border-carbon-950 transition-all min-h-[42px]">Bahan Baku</button>
+        </div>
+
+        <!-- Grid Kartu Produk (Dirender Aman via DOM API / textContent) -->
+        <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+        <!-- State Kosong Saat Pencarian Tidak Ditemukan -->
+        <div id="emptyCatalogState" class="hidden text-center py-16 px-4 bg-white rounded-3xl border border-carbon-200">
+          <div class="w-12 h-12 rounded-2xl bg-carbon-100 text-carbon-600 flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-carbon-950">Produk tidak ditemukan</h3>
+          <p class="text-sm text-carbon-500 mt-1 max-w-md mx-auto">Kata kunci atau kategori yang Anda pilih belum memiliki kecocokan. Silakan atur ulang filter.</p>
+          <button type="button" id="btnResetFilter" class="mt-5 px-5 py-2.5 rounded-xl bg-carbon-950 text-white text-sm font-semibold hover:bg-carbon-800 transition-colors min-h-[44px]">Reset Pencarian</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 5. TENTANG KAMI & KEUNGGULAN PRODUK ==================== -->
+    <section id="tentang" class="py-16 sm:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+          
+          <!-- Narasi Tentang Kami -->
+          <div class="lg:col-span-5 space-y-5">
+            <span class="inline-block px-3 py-1 rounded-lg bg-carbon-100 text-carbon-800 text-xs font-mono font-semibold uppercase tracking-wider">
+              Tentang Kami
+            </span>
+            <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-carbon-950">
+              Komitmen Presisi dalam Setiap Butir Karbon
+            </h2>
+            <p class="text-sm sm:text-base text-carbon-600 leading-relaxed">
+              <strong>pembuatan arang briket</strong> hadir sebagai pusat edukasi teknis sekaligus produsen briket biomassa terstandarisasi. Kami mengolah limbah tempurung kelapa dan serbuk kayu pilihan menjadi sumber energi bersih yang konsisten untuk pasar domestik maupun ekspor.
+            </p>
+            <p class="text-sm sm:text-base text-carbon-600 leading-relaxed">
+              Seluruh lini produksi kami menerapkan kontrol kualitas berlapis—mulai dari seleksi kadar air bahan baku hingga pengujian bakar acak pada setiap batch produksi.
+            </p>
+            <div class="pt-2 grid grid-cols-2 gap-4 border-t border-carbon-200">
+              <div>
+                <p class="text-2xl sm:text-3xl font-extrabold text-carbon-950 font-mono">100%</p>
+                <p class="text-xs text-carbon-500 mt-1">Biomassa Terbarukan Tanpa Tebang Hutan Alam</p>
+              </div>
+              <div>
+                <p class="text-2xl sm:text-3xl font-extrabold text-carbon-950 font-mono">0%</p>
+                <p class="text-xs text-carbon-500 mt-1">Bahan Kimia Berbahaya atau Pemutih Abu</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 Kartu Keunggulan Utama -->
+          <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-5">
+            
+            <!-- Keunggulan 1 -->
+            <div class="p-6 rounded-3xl bg-carbon-50 border border-carbon-200 space-y-3">
+              <div class="w-11 h-11 rounded-2xl bg-carbon-950 text-white flex items-center justify-center">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+              </div>
+              <h3 class="text-lg font-bold text-carbon-950">Kalori Tinggi &amp; Stabil</h3>
+              <p class="text-sm text-carbon-600 leading-relaxed">
+                Menghasilkan panas tinggi di atas 7.400 kkal/kg secara konstan sehingga mempercepat proses pemanggangan dan menghemat konsumsi bahan bakar hingga 40%.
+              </p>
+            </div>
+
+            <!-- Keunggulan 2 -->
+            <div class="p-6 rounded-3xl bg-carbon-50 border border-carbon-200 space-y-3">
+              <div class="w-11 h-11 rounded-2xl bg-carbon-950 text-white flex items-center justify-center">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></svg>
+              </div>
+              <h3 class="text-lg font-bold text-carbon-950">Rendah Asap &amp; Tanpa Bau</h3>
+              <p class="text-sm text-carbon-600 leading-relaxed">
+                Melalui pirolisis sempurna, zat tar dan gas volatil telah dieliminasi sehingga briket menyala bersih tanpa asap menyengat yang merusak cita rasa makanan.
+              </p>
+            </div>
+
+            <!-- Keunggulan 3 -->
+            <div class="p-6 rounded-3xl bg-carbon-50 border border-carbon-200 space-y-3">
+              <div class="w-11 h-11 rounded-2xl bg-carbon-950 text-white flex items-center justify-center">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <h3 class="text-lg font-bold text-carbon-950">Bebas Bahan Kimia</h3>
+              <p class="text-sm text-carbon-600 leading-relaxed">
+                Menggunakan perekat tepung tapioka alami tanpa campuran nitrat, sulfur, ataupun zat pemantik sintetis. Aman untuk ruang tertutup dengan ventilasi standar.
+              </p>
+            </div>
+
+            <!-- Keunggulan 4 -->
+            <div class="p-6 rounded-3xl bg-carbon-50 border border-carbon-200 space-y-3">
+              <div class="w-11 h-11 rounded-2xl bg-carbon-950 text-white flex items-center justify-center">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 0 1-9 9m9-9a9 9 0 0 0-9-9m9 9H3m9 9a9 9 0 0 1-9-9m9 9c1.66 0 3-4.03 3-9s-1.34-9-3-9m0 18c-1.66 0-3-4.03-3-9s1.34-9 3-9"/></svg>
+              </div>
+              <h3 class="text-lg font-bold text-carbon-950">Ramah Lingkungan</h3>
+              <p class="text-sm text-carbon-600 leading-relaxed">
+                Memanfaatkan limbah pertanian tempurung kelapa dan serbuk gergaji industri kayu menjadi energi sirkular bernilai ekonomi tinggi.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== 6. FOOTER LENGKAP ==================== -->
+  <footer class="bg-carbon-950 text-carbon-300 border-t border-carbon-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-10 border-b border-carbon-800">
+        
+        <!-- Kolom 1: Identitas -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-xl bg-white text-carbon-950 flex items-center justify-center font-bold">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+            </div>
+            <span class="text-lg font-extrabold text-white lowercase">pembuatan arang briket</span>
+          </div>
+          <p class="text-sm text-carbon-400 max-w-md leading-relaxed">
+            Sistem informasi terstruktur proses manufaktur arang briket dan penyedia briket karbon berkualitas tinggi untuk kebutuhan rumah tangga, kuliner BBQ, lounge, dan industri.
+          </p>
+        </div>
+
+        <!-- Kolom 2: Navigasi Cepat -->
+        <div>
+          <h3 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Navigasi</h3>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="#beranda" class="hover:text-white transition-colors">Beranda Utama</a></li>
+            <li><a href="#proses" class="hover:text-white transition-colors">5 Tahap Pembuatan</a></li>
+            <li><a href="#katalog" class="hover:text-white transition-colors">Katalog Produk</a></li>
+            <li><a href="#tentang" class="hover:text-white transition-colors">Tentang &amp; Keunggulan</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolom 3: Kontak & Operasional -->
+        <div>
+          <h3 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Kontak Produksi</h3>
+          <ul class="space-y-2.5 text-sm text-carbon-400">
+            <li>Kawasan Industri Biomassa Blok C-12</li>
+            <li>Senin – Sabtu: 08.00 – 17.00 WIB</li>
+            <li class="font-mono text-carbon-200">+62 812-3456-7890</li>
+            <li>
+              <button type="button" id="btnFooterCart" class="mt-2 inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-carbon-800 text-white text-xs font-semibold hover:bg-carbon-700 transition-colors min-h-[40px]">
+                Buka Keranjang Pemesanan
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-carbon-500">
+        <p>&copy; <span id="currentYear">2026</span> pembuatan arang briket. Seluruh hak cipta dilindungi.</p>
+        <p class="font-mono">Arsitektur Aman • Anti-XSS • CSP Enforced</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== 7. DRAWER KERANJANG BELANJA (LOCALSTORAGE + WHATSAPP) ==================== -->
+  <div id="cartDrawerWrapper" class="fixed inset-0 z-50 hidden" role="dialog" aria-modal="true" aria-labelledby="cartDrawerTitle">
+    <!-- Backdrop -->
+    <div id="cartBackdrop" class="drawer-backdrop fixed inset-0 bg-carbon-950/60 backdrop-blur-xs opacity-0"></div>
+    
+    <!-- Panel Drawer Kanan -->
+    <div id="cartPanel" class="drawer-panel fixed inset-y-0 right-0 w-full max-w-md bg-white shadow-2xl flex flex-col translate-x-full">
+      
+      <!-- Header Drawer -->
+      <div class="px-6 py-5 border-b border-carbon-200 flex items-center justify-between bg-carbon-50">
+        <div>
+          <h2 id="cartDrawerTitle" class="text-lg font-extrabold text-carbon-950">Keranjang Pemesanan</h2>
+          <p class="text-xs text-carbon-500">Tersimpan otomatis di perangkat Anda</p>
+        </div>
+        <button type="button" id="btnCloseCart" aria-label="Tutup Keranjang" class="p-2.5 rounded-xl bg-white border border-carbon-200 text-carbon-700 hover:text-carbon-950 hover:bg-carbon-100 min-w-[44px] min-h-[44px] flex items-center justify-center">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <!-- Daftar Item Keranjang -->
+      <div id="cartItemsContainer" class="flex-1 overflow-y-auto p-6 space-y-4"></div>
+
+      <!-- Form Validasi Pengiriman & Checkout WhatsApp -->
+      <div id="cartFooterSection" class="border-t border-carbon-200 p-6 bg-carbon-50 space-y-4">
+        <div class="flex items-center justify-between text-base font-bold text-carbon-950">
+          <span>Total Estimasi</span>
+          <span id="cartTotalPrice" class="font-mono text-lg">Rp 0</span>
+        </div>
+
+        <form id="checkoutForm" class="space-y-3" novalidate>
+          <div>
+            <label for="buyerName" class="block text-xs font-semibold text-carbon-700 mb-1">Nama Pemesan / Perusahaan *</label>
+            <input type="text" id="buyerName" required maxlength="60" placeholder="Contoh: Budi Santoso / CV Bara Jaya" class="w-full px-3.5 py-2.5 rounded-xl bg-white border border-carbon-300 text-sm text-carbon-950 focus:outline-none focus:border-carbon-950 min-h-[42px]">
+          </div>
+          <div>
+            <label for="buyerAddress" class="block text-xs font-semibold text-carbon-700 mb-1">Alamat Lengkap Pengiriman *</label>
+            <textarea id="buyerAddress" rows="2" required maxlength="200" placeholder="Jalan, Kecamatan, Kota, Kode Pos..." class="w-full px-3.5 py-2.5 rounded-xl bg-white border border-carbon-300 text-sm text-carbon-950 focus:outline-none focus:border-carbon-950 resize-none"></textarea>
+          </div>
+          <p id="formErrorMsg" class="hidden text-xs font-medium text-carbon-950 bg-carbon-200 px-3 py-2 rounded-lg"></p>
+          
+          <button type="submit" id="btnCheckoutWA" class="w-full py-3.5 px-5 rounded-2xl bg-carbon-950 text-white font-bold text-sm hover:bg-carbon-800 active:scale-[0.99] transition-all flex items-center justify-center gap-2 shadow-md min-h-[48px]">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            <span>Pesan Langsung via WhatsApp</span>
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==================== 8. KONTAINER NOTIFIKASI TOAST ==================== -->
+  <div id="toastContainer" aria-live="polite" class="fixed bottom-4 right-4 left-4 sm:left-auto sm:w-96 z-50 flex flex-col gap-2 pointer-events-none"></div>
+
+  <!-- ==================== MODUL LOGIKA INTERAKTIF AMAN (Siap dipisah ke app.js) ==================== -->
+  <script nonce="briket2026sec">
+    (function () {
+      'use strict';
+
+      // 1. KONFIGURASI KONSTANTA & DATA PRODUK STATIS (ZERO SECRETS)
+      const STORAGE_KEY = 'briket_cart_v1';
+      const WA_BUSINESS_NUMBER = '6281234567890'; // Nomor tujuan pemesanan
+
+      const PRODUCTS = [
+        {
+          id: 'brk-shisha-cube',
+          name: 'Briket Shisha Cube 25mm',
+          category: 'Tempurung Kelapa',
+          weight: '10 kg / Box',
+          price: 185000,
+          calories: '7.600 kkal/kg',
+          ash: '2.1%',
+          description: 'Kubus presisi 25x25x25 mm berbahan 100% tempurung kelapa tua. Abu putih padat, tanpa percikan, durasi bara 2.5 jam.',
+          image: 'https://placehold.co/600x400/18181b/fafafa?text=Shisha+Cube+25mm'
+        },
+        {
+          id: 'brk-bbq-hex',
+          name: 'Briket BBQ Hexagonal',
+          category: 'BBQ & Resto',
+          weight: '10 kg / Box',
+          price: 145000,
+          calories: '7.300 kkal/kg',
+          ash: '3.2%',
+          description: 'Bentuk segi enam berlubang tengah untuk sirkulasi oksigen optimal. Ideal untuk restoran panggangan, sate, dan yakitori.',
+          image: 'https://placehold.co/600x400/27272a/fafafa?text=BBQ+Hexagonal'
+        },
+        {
+          id: 'brk-sawdust-pillow',
+          name: 'Briket Sawdust Pillow',
+          category: 'BBQ & Resto',
+          weight: '10 kg / Karung',
+          price: 120000,
+          calories: '7.100 kkal/kg',
+          ash: '3.8%',
+          description: 'Briket bantal padat dari serbuk gergaji kayu keras terkarbonisasi. Mudah dinyalakan dan panas stabil hingga 4 jam.',
+          image: 'https://placehold.co/600x400/3f3f46/fafafa?text=Sawdust+Pillow'
+        },
+        {
+          id: 'brk-coconut-grade-a',
+          name: 'Briket Tempurung Kelapa Grade A',
+          category: 'Tempurung Kelapa',
+          weight: '20 kg / Master Box',
+          price: 340000,
+          calories: '7.550 kkal/kg',
+          ash: '2.3%',
+          description: 'Standar ekspor dengan kadar air di bawah 4.5%. Lolos uji jatuh 1.5 meter tanpa retak dan bebas aroma asap.',
+          image: 'https://placehold.co/600x400/09090b/fafafa?text=Coconut+Grade+A'
+        },
+        {
+          id: 'brk-hardwood-ind',
+          name: 'Briket Kayu Keras Industri',
+          category: 'Industri',
+          weight: '25 kg / Sak',
+          price: 265000,
+          calories: '7.250 kkal/kg',
+          ash: '4.0%',
+          description: 'Dirancang untuk boiler uap, pengeringan hasil bumi, dan tungku peleburan skala UMKM maupun pabrik.',
+          image: 'https://placehold.co/600x400/52525b/fafafa?text=Industri+Boiler'
+        },
+        {
+          id: 'brk-starter-kit',
+          name: 'Starter Kit Bahan Baku & Perekat',
+          category: 'Bahan Baku',
+          weight: '15 kg Paket Uji',
+          price: 195000,
+          calories: 'Mesh 80 + Tapioka',
+          ash: 'Formulasi Lab',
+          description: 'Paket lengkap 12 kg tepung arang tempurung mesh 80 dan 3 kg pati tapioka teknis beserta lembar panduan rasio adonan.',
+          image: 'https://placehold.co/600x400/18181b/e4e4e7?text=Starter+Kit+Lab'
+        }
+      ];
+
+      // 2. STATE APLIKASI
+      let state = {
+        searchQuery: '',
+        selectedCategory: 'Semua',
+        cart: []
+      };
+
+      // 3. REFERENSI ELEMEN DOM
+      const dom = {
+        productGrid: document.getElementById('productGrid'),
+        emptyCatalogState: document.getElementById('emptyCatalogState'),
+        searchInput: document.getElementById('searchInput'),
+        categoryFilterBar: document.getElementById('categoryFilterBar'),
+        btnResetFilter: document.getElementById('btnResetFilter'),
+        btnOpenCart: document.getElementById('btnOpenCart'),
+        btnFooterCart: document.getElementById('btnFooterCart'),
+        btnCloseCart: document.getElementById('btnCloseCart'),
+        cartDrawerWrapper: document.getElementById('cartDrawerWrapper'),
+        cartBackdrop: document.getElementById('cartBackdrop'),
+        cartPanel: document.getElementById('cartPanel'),
+        cartItemsContainer: document.getElementById('cartItemsContainer'),
+        cartFooterSection: document.getElementById('cartFooterSection'),
+        cartBadgeCount: document.getElementById('cartBadgeCount'),
+        cartTotalPrice: document.getElementById('cartTotalPrice'),
+        checkoutForm: document.getElementById('checkoutForm'),
+        buyerName: document.getElementById('buyerName'),
+        buyerAddress: document.getElementById('buyerAddress'),
+        formErrorMsg: document.getElementById('formErrorMsg'),
+        toastContainer: document.getElementById('toastContainer'),
+        btnMobileMenu: document.getElementById('btnMobileMenu'),
+        mobileNavMenu: document.getElementById('mobileNavMenu'),
+        iconMenuOpen: document.getElementById('iconMenuOpen'),
+        iconMenuClose: document.getElementById('iconMenuClose')
+      };
+
+      // 4. UTILITAS FORMAT & SANITASI INPUT KETAT (ANTI-XSS)
+      function formatRupiah(amount) {
+        return new Intl.NumberFormat('id-ID', {
+          style: 'currency',
+          currency: 'IDR',
+          minimumFractionDigits: 0
+        }).format(amount);
+      }
+
+      function sanitizeText(str, maxLen) {
+        if (typeof str !== 'string') return '';
+        // Menghapus karakter kontrol berbahaya dan membatasi panjang
+        return str.replace(/[\u0000-\u001F\u007F<>]/g, '').trim().slice(0, maxLen);
+      }
+
+      // 5. MANAJEMEN LOCALSTORAGE AMAN
+      function loadCartFromStorage() {
+        try {
+          const raw = localStorage.getItem(STORAGE_KEY);
+          if (!raw) return [];
+          const parsed = JSON.parse(raw);
+          if (!Array.isArray(parsed)) return [];
+          // Validasi integritas item terhadap katalog resmi
+          return parsed.filter(item =>
+            item &&
+            typeof item.id === 'string' &&
+            Number.isInteger(item.qty) &&
+            item.qty > 0 &&
+            item.qty <= 999 &&
+            PRODUCTS.some(p => p.id === item.id)
+          );
+        } catch (e) {
+          return [];
+        }
+      }
+
+      function saveCartToStorage() {
+        try {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(state.cart));
+        } catch (e) {
+          showToast('Penyimpanan browser penuh, keranjang aktif di sesi ini.');
+        }
+      }
+
+      // 6. NOTIFIKASI TOAST IN-PAGE (MENGGANTIKAN ALERT/CONFIRM)
+      function showToast(message) {
+        const toast = document.createElement('div');
+        toast.className = 'toast-enter pointer-events-auto flex items-center justify-between gap-3 px-4 py-3.5 rounded-2xl bg-carbon-950 text-white text-sm font-medium shadow-xl border border-carbon-800';
+        
+        const textSpan = document.createElement('span');
+        textSpan.textContent = sanitizeText(message, 120);
+        
+        const badge = document.createElement('span');
+        badge.className = 'w-2 h-2 rounded-full bg-white shrink-0';
+
+        toast.appendChild(badge);
+        toast.appendChild(textSpan);
+        dom.toastContainer.appendChild(toast);
+
+        setTimeout(() => {
+          toast.style.opacity = '0';
+          toast.style.transform = 'translateY(8px)';
+          toast.style.transition = 'all 0.2s ease';
+          setTimeout(() => toast.remove(), 220);
+        }, 2800);
+      }
+
+      // 7. RENDER KATALOG PRODUK MENGGUNAKAN CREATEELEMENT & TEXTCONTENT (ZERO INNERHTML)
+      function renderCatalog() {
+        while (dom.productGrid.firstChild) {
+          dom.productGrid.removeChild(dom.productGrid.firstChild);
+        }
+
+        const query = state.searchQuery.toLowerCase();
+        const filtered = PRODUCTS.filter(product => {
+          const matchesCategory = state.selectedCategory === 'Semua' || product.category === state.selectedCategory;
+          const matchesSearch =
+            product.name.toLowerCase().includes(query) ||
+            product.description.toLowerCase().includes(query) ||
+            product.category.toLowerCase().includes(query) ||
+            product.calories.toLowerCase().includes(query);
+          return matchesCategory && matchesSearch;
+        });
+
+        if (filtered.length === 0) {
+          dom.productGrid.classList.add('hidden');
+          dom.emptyCatalogState.classList.remove('hidden');
+          return;
+        }
+
+        dom.productGrid.classList.remove('hidden');
+        dom.emptyCatalogState.classList.add('hidden');
+
+        filtered.forEach(product => {
+          const card = document.createElement('article');
+          card.className = 'bg-white rounded-3xl border border-carbon-200 overflow-hidden flex flex-col justify-between hover:border-carbon-950 hover:shadow-lg transition-all';
+
+          // Bagian Atas: Gambar & Badge
+          const topSection = document.createElement('div');
+          
+          const imgWrapper = document.createElement('div');
+          imgWrapper.className = 'relative aspect-[3/2] bg-carbon-900 overflow-hidden';
+
+          const img = document.createElement('img');
+          img.src = product.image;
+          img.alt = product.name;
+          img.loading = 'lazy';
+          img.className = 'w-full h-full object-cover grayscale contrast-125 hover:scale-105 transition-transform duration-500';
+          img.onerror = function () {
+            this.onerror = null;
+            this.src = 'https://placehold.co/600x400/18181b/ffffff?text=Arang+Briket';
+          };
+
+          const catBadge = document.createElement('span');
+          catBadge.className = 'absolute top-3 left-3 px-3 py-1 rounded-full bg-carbon-950/90 text-white text-xs font-mono';
+          catBadge.textContent = product.category;
+
+          imgWrapper.appendChild(img);
+          imgWrapper.appendChild(catBadge);
+
+          // Konten Teks Kartu
+          const body = document.createElement('div');
+          body.className = 'p-6 space-y-3';
+
+          const title = document.createElement('h3');
+          title.className = 'text-lg font-bold text-carbon-950 leading-snug';
+          title.textContent = product.name;
+
+          const desc = document.createElement('p');
+          desc.className = 'text-sm text-carbon-600 leading-relaxed';
+          desc.textContent = product.description;
+
+          // Spesifikasi Mini
+          const specRow = document.createElement('div');
+          specRow.className = 'pt-2 flex flex-wrap gap-2 text-xs font-mono text-carbon-700';
+
+          const specCal = document.createElement('span');
+          specCal.className = 'px-2.5 py-1 rounded-lg bg-carbon-100';
+          specCal.textContent = 'Kalori: ' + product.calories;
+
+          const specAsh = document.createElement('span');
+          specAsh.className = 'px-2.5 py-1 rounded-lg bg-carbon-100';
+          specAsh.textContent = 'Abu: ' + product.ash;
+
+          specRow.appendChild(specCal);
+          specRow.appendChild(specAsh);
+
+          body.appendChild(title);
+          body.appendChild(desc);
+          body.appendChild(specRow);
+
+          topSection.appendChild(imgWrapper);
+          topSection.appendChild(body);
+
+          // Bagian Bawah: Harga & Tombol Tambah
+          const footer = document.createElement('div');
+          footer.className = 'px-6 pb-6 pt-4 border-t border-carbon-100 flex items-center justify-between gap-3';
+
+          const priceBox = document.createElement('div');
+          const priceLabel = document.createElement('span');
+          priceLabel.className = 'block text-xs text-carbon-500';
+          priceLabel.textContent = product.weight;
+
+          const priceValue = document.createElement('span');
+          priceValue.className = 'block text-base sm:text-lg font-extrabold font-mono text-carbon-950';
+          priceValue.textContent = formatRupiah(product.price);
+
+          priceBox.appendChild(priceLabel);
+          priceBox.appendChild(priceValue);
+
+          const addBtn = document.createElement('button');
+          addBtn.type = 'button';
+          addBtn.className = 'px-4 py-2.5 rounded-xl bg-carbon-950 text-white text-xs sm:text-sm font-semibold hover:bg-carbon-800 active:scale-95 transition-all min-h-[44px] shrink-0';
+          addBtn.textContent = '+ Keranjang';
+          addBtn.addEventListener('click', () => addToCart(product.id));
+
+          footer.appendChild(priceBox);
+          footer.appendChild(addBtn);
+
+          card.appendChild(topSection);
+          card.appendChild(footer);
+          dom.productGrid.appendChild(card);
+        });
+      }
+
+      // 8. LOGIKA KERANJANG BELANJA
+      function addToCart(productId) {
+        const product = PRODUCTS.find(p => p.id === productId);
+        if (!product) return;
+
+        const existing = state.cart.find(item => item.id === productId);
+        if (existing) {
+          if (existing.qty >= 999) {
+            showToast('Maksimal 999 unit per produk.');
+            return;
+          }
+          existing.qty += 1;
+        } else {
+          state.cart.push({ id: productId, qty: 1 });
+        }
+
+        saveCartToStorage();
+        renderCart();
+        showToast('Ditambahkan: ' + product.name);
+      }
+
+      function updateCartQty(productId, delta) {
+        const idx = state.cart.findIndex(item => item.id === productId);
+        if (idx === -1) return;
+
+        const newQty = state.cart[idx].qty + delta;
+        if (newQty <= 0) {
+          state.cart.splice(idx, 1);
+          showToast('Item dihapus dari keranjang.');
+        } else if (newQty <= 999) {
+          state.cart[idx].qty = newQty;
+        }
+
+        saveCartToStorage();
+        renderCart();
+      }
+
+      function removeCartItem(productId) {
+        state.cart = state.cart.filter(item => item.id !== productId);
+        saveCartToStorage();
+        renderCart();
+        showToast('Item dihapus dari keranjang.');
+      }
+
+      function renderCart() {
+        while (dom.cartItemsContainer.firstChild) {
+          dom.cartItemsContainer.removeChild(dom.cartItemsContainer.firstChild);
+        }
+
+        let totalItems = 0;
+        let totalPrice = 0;
+
+        state.cart.forEach(item => {
+          const product = PRODUCTS.find(p => p.id === item.id);
+          if (!product) return;
+          totalItems += item.qty;
+          totalPrice += product.price * item.qty;
+
+          // Kartu Item Keranjang
+          const row = document.createElement('div');
+          row.className = 'p-4 rounded-2xl bg-carbon-50 border border-carbon-200 flex flex-col gap-3';
+
+          const topInfo = document.createElement('div');
+          topInfo.className = 'flex items-start justify-between gap-2';
+
+          const infoText = document.createElement('div');
+          const itemTitle = document.createElement('h4');
+          itemTitle.className = 'text-sm font-bold text-carbon-950';
+          itemTitle.textContent = product.name;
+
+          const itemSub = document.createElement('p');
+          itemSub.className = 'text-xs font-mono text-carbon-500 mt-0.5';
+          itemSub.textContent = formatRupiah(product.price) + ' • ' + product.weight;
+
+          infoText.appendChild(itemTitle);
+          infoText.appendChild(itemSub);
+
+          const delBtn = document.createElement('button');
+          delBtn.type = 'button';
+          delBtn.setAttribute('aria-label', 'Hapus ' + product.name);
+          delBtn.className = 'text-xs font-medium text-carbon-500 hover:text-carbon-950 px-2 py-1 rounded-lg hover:bg-carbon-200 transition-colors';
+          delBtn.textContent = 'Hapus';
+          delBtn.addEventListener('click', () => removeCartItem(product.id));
+
+          topInfo.appendChild(infoText);
+          topInfo.appendChild(delBtn);
+
+          // Kontrol Jumlah & Subtotal
+          const bottomControls = document.createElement('div');
+          bottomControls.className = 'flex items-center justify-between pt-2 border-t border-carbon-200/70';
+
+          const qtyGroup = document.createElement('div');
+          qtyGroup.className = 'inline-flex items-center rounded-xl bg-white border border-carbon-300 overflow-hidden';
+
+          const btnMinus = document.createElement('button');
+          btnMinus.type = 'button';
+          btnMinus.setAttribute('aria-label', 'Kurangi jumlah');
+          btnMinus.className = 'w-9 h-9 flex items-center justify-center text-carbon-900 hover:bg-carbon-100 font-bold';
+          btnMinus.textContent = '−';
+          btnMinus.addEventListener('click', () => updateCartQty(product.id, -1));
+
+          const qtyVal = document.createElement('span');
+          qtyVal.className = 'w-10 text-center text-xs font-mono font-bold text-carbon-950';
+          qtyVal.textContent = String(item.qty);
+
+          const btnPlus = document.createElement('button');
+          btnPlus.type = 'button';
+          btnPlus.setAttribute('aria-label', 'Tambah jumlah');
+          btnPlus.className = 'w-9 h-9 flex items-center justify-center text-carbon-900 hover:bg-carbon-100 font-bold';
+          btnPlus.textContent = '+';
+          btnPlus.addEventListener('click', () => updateCartQty(product.id, 1));
+
+          qtyGroup.appendChild(btnMinus);
+          qtyGroup.appendChild(qtyVal);
+          qtyGroup.appendChild(btnPlus);
+
+          const subtotalSpan = document.createElement('span');
+          subtotalSpan.className = 'text-sm font-extrabold font-mono text-carbon-950';
+          subtotalSpan.textContent = formatRupiah(product.price * item.qty);
+
+          bottomControls.appendChild(qtyGroup);
+          bottomControls.appendChild(subtotalSpan);
+
+          row.appendChild(topInfo);
+          row.appendChild(bottomControls);
+          dom.cartItemsContainer.appendChild(row);
+        });
+
+        dom.cartBadgeCount.textContent = String(totalItems);
+        dom.cartTotalPrice.textContent = formatRupiah(totalPrice);
+
+        if (state.cart.length === 0) {
+          const emptyMsg = document.createElement('div');
+          emptyMsg.className = 'text-center py-12 px-4 space-y-2';
+
+          const titleEmpty = document.createElement('p');
+          titleEmpty.className = 'text-base font-bold text-carbon-900';
+          titleEmpty.textContent = 'Keranjang Anda masih kosong';
+
+          const subEmpty = document.createElement('p');
+          subEmpty.className = 'text-xs text-carbon-500';
+          subEmpty.textContent = 'Pilih varian arang briket pada bagian Katalog untuk memulai pemesanan.';
+
+          emptyMsg.appendChild(titleEmpty);
+          emptyMsg.appendChild(subEmpty);
+          dom.cartItemsContainer.appendChild(emptyMsg);
+          dom.cartFooterSection.classList.add('hidden');
+        } else {
+          dom.cartFooterSection.classList.remove('hidden');
+        }
+      }
+
+      // 9. KONTROL BUKA / TUTUP DRAWER KERANJANG
+      function openCartDrawer() {
+        dom.cartDrawerWrapper.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+        requestAnimationFrame(() => {
+          dom.cartBackdrop.classList.remove('opacity-0');
+          dom.cartPanel.classList.remove('translate-x-full');
+        });
+      }
+
+      function closeCartDrawer() {
+        dom.cartBackdrop.classList.add('opacity-0');
+        dom.cartPanel.classList.add('translate-x-full');
+        setTimeout(() => {
+          dom.cartDrawerWrapper.classList.add('hidden');
+          document.body.style.overflow = '';
+        }, 280);
+      }
+
+      // 10. VALIDASI CHECKOUT & GENERATE TAUTAN WHATSAPP AMAN
+      function handleWhatsAppCheckout(event) {
+        event.preventDefault();
+        dom.formErrorMsg.classList.add('hidden');
+
+        if (state.cart.length === 0) {
+          showToast('Keranjang belanja masih kosong.');
+          return;
+        }
+
+        const cleanName = sanitizeText(dom.buyerName.value, 60);
+        const cleanAddress = sanitizeText(dom.buyerAddress.value, 200);
+
+        if (cleanName.length < 2) {
+          dom.formErrorMsg.textContent = 'Mohon isi nama pemesan minimal 2 karakter.';
+          dom.formErrorMsg.classList.remove('hidden');
+          dom.buyerName.focus();
+          return;
+        }
+
+        if (cleanAddress.length < 8) {
+          dom.formErrorMsg.textContent = 'Mohon isi alamat pengiriman dengan lengkap.';
+          dom.formErrorMsg.classList.remove('hidden');
+          dom.buyerAddress.focus();
+          return;
+        }
+
+        let lines = [
+          'Halo Admin *pembuatan arang briket*, saya ingin melakukan pemesanan:',
+          '',
+          '*Data Pemesan:*',
+          'Nama: ' + cleanName,
+          'Alamat: ' + cleanAddress,
+          '',
+          '*Rincian Pesanan:*'
+        ];
+
+        let grandTotal = 0;
+        state.cart.forEach((item, idx) => {
+          const product = PRODUCTS.find(p => p.id === item.id);
+          if (!product) return;
+          const sub = product.price * item.qty;
+          grandTotal += sub;
+          lines.push((idx + 1) + '. ' + product.name + ' (' + item.qty + ' x ' + formatRupiah(product.price) + ') = ' + formatRupiah(sub));
+        });
+
+        lines.push('');
+        lines.push('*Total Estimasi: ' + formatRupiah(grandTotal) + '*');
+        lines.push('Mohon konfirmasi ketersediaan stok dan ongkos kirim. Terima kasih.');
+
+        const encodedMessage = encodeURIComponent(lines.join('\n'));
+        const waUrl = 'https://wa.me/' + WA_BUSINESS_NUMBER + '?text=' + encodedMessage;
+
+        window.open(waUrl, '_blank', 'noopener,noreferrer');
+        showToast('Mengarahkan ke WhatsApp...');
+      }
+
+      // 11. EVENT LISTENERS
+      function initEvents() {
+        // Pencarian real-time
+        dom.searchInput.addEventListener('input', (e) => {
+          state.searchQuery = sanitizeText(e.target.value, 60);
+          renderCatalog();
+        });
+
+        // Filter kategori
+        dom.categoryFilterBar.addEventListener('click', (e) => {
+          const btn = e.target.closest('.filter-btn');
+          if (!btn) return;
+          const cat = btn.getAttribute('data-category');
+          if (!cat) return;
+
+          state.selectedCategory = cat;
+          document.querySelectorAll('.filter-btn').forEach(el => {
+            el.classList.remove('bg-carbon-950', 'text-white', 'border-carbon-950', 'font-semibold');
+            el.classList.add('bg-white', 'text-carbon-700', 'border-carbon-300', 'font-medium');
+          });
+          btn.classList.remove('bg-white', 'text-carbon-700', 'border-carbon-300', 'font-medium');
+          btn.classList.add('bg-carbon-950', 'text-white', 'border-carbon-950', 'font-semibold');
+
+          renderCatalog();
+        });
+
+        // Reset filter
+        dom.btnResetFilter.addEventListener('click', () => {
+          state.searchQuery = '';
+          state.selectedCategory = 'Semua';
+          dom.searchInput.value = '';
+          const defaultBtn = dom.categoryFilterBar.querySelector('[data-category="Semua"]');
+          if (defaultBtn) defaultBtn.click();
+        });
+
+        // Drawer Keranjang
+        dom.btnOpenCart.addEventListener('click', openCartDrawer);
+        dom.btnFooterCart.addEventListener('click', openCartDrawer);
+        dom.btnCloseCart.addEventListener('click', closeCartDrawer);
+        dom.cartBackdrop.addEventListener('click', closeCartDrawer);
+
+        // Tombol Escape untuk menutup drawer
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && !dom.cartDrawerWrapper.classList.contains('hidden')) {
+            closeCartDrawer();
+          }
+        });
+
+        // Submit Form WhatsApp
+        dom.checkoutForm.addEventListener('submit', handleWhatsAppCheckout);
+
+        // Toggle Menu Mobile
+        dom.btnMobileMenu.addEventListener('click', () => {
+          const isHidden = dom.mobileNavMenu.classList.contains('hidden');
+          dom.mobileNavMenu.classList.toggle('hidden');
+          dom.iconMenuOpen.classList.toggle('hidden');
+          dom.iconMenuClose.classList.toggle('hidden');
+          dom.btnMobileMenu.setAttribute('aria-expanded', String(isHidden));
+        });
+
+        // Tutup menu mobile saat tautan diklik
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+          link.addEventListener('click', () => {
+            dom.mobileNavMenu.classList.add('hidden');
+            dom.iconMenuOpen.classList.remove('hidden');
+            dom.iconMenuClose.classList.add('hidden');
+            dom.btnMobileMenu.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+
+      // 12. INISIALISASI APLIKASI
+      document.addEventListener('DOMContentLoaded', () => {
+        state.cart = loadCartFromStorage();
+        initEvents();
+        renderCatalog();
+        renderCart();
+      });
+    })();
+  </script>
+</body>
+</html>
