@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta name="description" content="Panduan wisata Kota Langsa, Aceh, lengkap dan mudah untuk pemula.">
+<title>Jelajah Langsa – Deskripsi Wisata Kota Langsa</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a href="#beranda" class="logo">🌿 Jelajah Langsa</a>
+    <nav id="nav" class="nav" aria-label="Navigasi utama">
+      <a href="#beranda">Beranda</a><a href="#tentang">Tentang</a><a href="#wisata">Wisata</a><a href="#kontak">Kontak</a>
+    </nav>
+    <div class="hdr-act">
+      <button id="cartBtn" class="btn btn-ghost" type="button" aria-label="Buka rencana kunjungan">🧳 <span id="cartCount" class="badge">0</span></button>
+      <button id="menuBtn" class="btn btn-ghost menu-btn" type="button" aria-label="Menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+<main>
+<section id="beranda" class="hero">
+  <div class="wrap">
+    <p class="chip">Aceh • Indonesia</p>
+    <h1>Kenali Keindahan <span class="grad">Kota Langsa</span></h1>
+    <p class="lead">Panduan ringkas dan lengkap untuk pemula: dari hutan mangrove, masjid megah, taman kota, sampai kuliner khas Aceh.</p>
+    <div class="row"><a href="#wisata" class="btn btn-pri">Mulai Jelajah</a><a href="#tentang" class="btn btn-ghost">Pelajari Dulu</a></div>
+  </div>
+</section>
+<section id="tentang" class="sec wrap">
+  <h2>Tentang Langsa</h2>
+  <div class="grid3">
+    <article class="card"><h3>📍 Di Mana?</h3><p>Langsa adalah kota di bagian timur Provinsi Aceh, dekat perbatasan Sumatra Utara. Akses darat lewat jalur lintas timur Sumatra.</p></article>
+    <article class="card"><h3>🌴 Apa Daya Tariknya?</h3><p>Perpaduan wisata alam pesisir, bangunan religi, ruang hijau kota, dan kuliner khas Aceh yang cocok untuk perjalanan singkat.</p></article>
+    <article class="card"><h3>🧭 Tips Pemula</h3><p>Hormati adat dan syariat setempat, berpakaian sopan, bawa uang tunai secukupnya, dan cek jam buka sebelum berkunjung.</p></article>
+  </div>
+</section>
+<section id="wisata" class="sec wrap">
+  <h2>Katalog Wisata</h2>
+  <p class="muted">Cari dan filter, lalu tambahkan ke rencana kunjungan. Info bersifat umum; cek kembali kondisi terbaru sebelum berangkat.</p>
+  <div class="tools">
+    <label class="sr" for="q">Cari wisata</label>
+    <input id="q" type="search" placeholder="Cari nama atau deskripsi…" maxlength="60" autocomplete="off">
+    <div id="filters" class="filters" role="group" aria-label="Filter kategori"></div>
+  </div>
+  <div id="grid" class="grid3"></div>
+  <p id="empty" class="muted hidden">Tidak ada hasil. Coba kata kunci lain.</p>
+</section>
+</main>
+<footer id="kontak" class="foot">
+  <div class="wrap">
+    <h2>Butuh Bantuan Rencana?</h2>
+    <p>Tanya langsung via WhatsApp untuk saran rute dan itinerary.</p>
+    <button id="waDirect" class="btn btn-pri" type="button">💬 Chat WhatsApp</button>
+    <p class="small">© <span id="yr"></span> Jelajah Langsa. Dibuat untuk tujuan informasi.</p>
+  </div>
+</footer>
+<div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="mt">
+  <div class="panel">
+    <div class="row between"><h2 id="mt">Rencana Kunjungan</h2><button id="closeBtn" class="btn btn-ghost" type="button" aria-label="Tutup">✕</button></div>
+    <ul id="cartList" class="clist"></ul>
+    <p id="cartEmpty" class="muted">Belum ada tujuan dipilih.</p>
+    <div class="row"><button id="clearBtn" class="btn btn-ghost" type="button">Kosongkan</button><button id="sendBtn" class="btn btn-pri" type="button">Pesan via WhatsApp</button></div>
+  </div>
+</div>
+<div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+<script src="app.js" defer></script>
+</body>
+</html>
